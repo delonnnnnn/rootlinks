@@ -14,7 +14,7 @@ html {
   --bg-color: linear-gradient(199deg, rgba(2,0,36,1) 0%, 
   rgba(6,75,43,1) 17%, 
   rgba(9,121,47,1) 49%, rgba(0,172,117,1) 95%);
-  --text-color: black;
+  --text-color: white;
   --primary-color: #117A65;
   --sec-color: #04725c;
 }

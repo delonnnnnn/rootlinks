@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+html {
+  /* variaveis*/
+  --bg-color: rgb(2,0,36);
+  --bg-color: linear-gradient(199deg, rgba(2,0,36,1) 0%, 
+  rgba(6,75,43,1) 17%, 
+  rgba(9,121,47,1) 49%, rgba(0,172,117,1) 95%);
+  --text-color: black;
+  --primary-color: #117A65;
+  --sec-color: #04725c;
+}
+
+body.red{
+  --bg-color: rgb(33,0,0);
+  --bg-color: linear-gradient(0deg, rgba(33,0,0,1) 0%, 
+  rgba(75,6,6,1) 17%, rgba(121,9,9,1) 49%, rgba(172,0,0,1) 95%);
+  --primary-color: rgb(135, 3, 3);
+  --sec-color: rgba(85, 3, 3, 0.769);
+  --foo-color: white;
+}
+
+body.blue{
+  --bg-color:blue;
+  --bg-color:linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  --primary-color: rgb(30, 30, 80);
+  --sec-color: rgb(44, 44, 143);
+  --foo-color: white;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img { 
+  width: 100%;
+}
+
+img.profile {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  border: var(--primary-color) solid 4px;
+  transition: border 480ms;
+}
+
+img.profile:hover {
+  border: var(--sec-color) solid 4px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  margin: 48px 0;
+}
+
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: rgba(245, 245, 245, 0.851);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  transition: background 350ms;
+} 
+
+ul li a:hover {
+  background: var(--sec-color);
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.5;
+  transition: color 1000ms;
+  color: var(--foo-color);
+}
+
+footer:hover {
+  color: var(--foo-color);
+  opacity: 1;
+}
